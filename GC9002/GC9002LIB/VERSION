@@ -1,0 +1,36 @@
+SMART-EVB RTOS SDK
+
+# Compiler version
+# thead xuantie-9 serials
+gcc version 10.2.0 (Xuantie Xuantie-900 elf newlib gcc Toolchain V2.0.3 B-20210728)
+# thead xuantie-8 serials
+gcc  version 6.3.0 (C-SKY Tools V3.10.20 Minilibc abiv2 B20200219)
+
+# CDK  version
+CSKY Development Kit V2.8.4
+
+# CDS  version
+C-Sky Development Suite for CK-CPU C/C++ Developers (V5.2.4 B20201231)
+
+# DebugServer version
+C-Sky DebugServer (V5.10.13)
+
+# QEMU version
+cskysim v3.2.0 (QEMU V4.1.0) B20200730
+
+# DSP-LIB version
+CSI-DSP LIB v4.2.1
+
+
+
+
+
+RELEASE NOTE
+==================================
+V1.7.9
+1. 升级P-ext 0.9.4, 升级 P-ext csi接口lib
+2. 升级工具链, gcc version 10.2.0 (Xuantie Xuantie-900 elf newlib gcc Toolchain V2.0.3 B-20210728)，更新编译选项
+3. 更新向量中断方式
+
+==================================
+

@@ -1,0 +1,121 @@
+﻿%=========================================================================
+%FILE:         product.bin
+%AUTHOR:       asuwish80
+%VERSION:      V1.10.19
+%DATE:         2023-08-08
+%COPYRIGHT:    ©2015-2023 Suzhou Suxian Micro-electronics Technology Co, Limited
+%BRIEF:        This file provides all the display configure parameters.
+%=========================================================================
+
+
+%==============================BEGIN OF FILE==============================
+
+%configure LCD pclk/hs/vs polarity.
+%0: F/H/H
+%1: R/H/H
+%2: F/L/H
+%3: R/L/H
+%4: F/H/L
+%5: R/H/L
+%6: F/L/L
+%7: R/L/L
+PolarityPara:6
+
+%configure LCD display parameters.
+HPIXEL_VALUE:240
+VLINES_VALUE:320
+HSYNCPW_VALUE:48
+VSYNCPW_VALUE:1
+HFNPRCH_VALUE:40
+VFNPRCH_VALUE:31
+HBKPRCH_VALUE:40
+VBKPRCH_VALUE:31
+
+%GC9003:
+%configure LCD pixel clock parameters.
+%CLKINDEVIDE | PLLOUTPUTDIVIDE | VCOMUTIPLY   =     PCLK
+%     6      |        7        |     48       =     3MHz
+%     5      |        6        |     40       =     6MHz
+%     4      |        5        |     24       =     9MHz
+%     4      |        5        |     32       =     12MHz
+%     3      |        4        |     13~36    =     13~36MHz, step=1MHz
+%     2      |        3        |     9~25     =     27~75MHz, step=3MHz
+%VCOMUTIPLY:33
+%CLKINDEVIDE:3
+%PLLOUTPUTDIVIDE:4
+
+%GC9002:
+%configure LCD pixel clock parameters.
+%Pixel CLK = 480MHz / CLKINDEVIDE
+CLKINDEVIDE:48
+
+%GC9002:
+%configure LCD driver interface.
+%0: LCD_RGB565 
+%1: LCD_888 
+%2: LCD_MRB3205
+%3: LCD_SJXD
+%4: LCD_ST7512
+%5: LCD_ST7735S
+%6: LCD_ST77903 
+%7: LCD_LEIKE
+%8: LCD_TFT128QM071
+%9: LCD_GC9307N
+DISPLAYINTERFACE:9
+
+%GC9002:
+%use LCD RAM? yes:1 no:0
+SCREENRAM:1
+
+%configure LCD backlight parameters.
+BacklightPWMEnable:1
+BacklightPWMFrequence:5000
+BacklightOn:0
+BacklightNormal:100
+BacklightWait:50
+BacklightDuration:600
+
+%configure buzzer parameters.
+BuzzerPWMEnable:1
+BuzzerFrequence:2700
+BuzzerDuty:300
+BuzzerDutyDiv:3000
+BuzzerDuration:10
+
+%enable touch sound, do:1, no:0.
+TouchSound:1
+
+%select touch type, no:0, RTP:1, CTP:2, ADC:3, cpu0-R:4, cpu0-C:5.
+TouchScreenType:3
+
+%for RTP-ADC, adjust touch delay time.
+TRADCDelay:1000
+
+%for CTP, interactive x-axis and y-axis, do:1, no:0.
+TPInterChangeXY:0
+
+%for CTP, rotate coordinate system, 0/90/180/270.
+TPRotate:0
+
+%adjust display direction, 0/90/180/270.
+DisplayRotate:0
+
+%adjust display contrast, 0~200.
+DisplayContrast:100
+
+%adjust display saturation, 0~200.
+DisplaySaturation:100
+
+%adjust display brightness, 0~200.
+DisplayBrightness:100
+
+%select resolution scope, 0:dispay, 1:video, 2:audio.
+ResolutionRatioType:0
+
+%enable serial communication CRC check, do:1, no:0.
+CRC:1
+
+%select priority, fps:0, comm:1.
+SystemOption:1
+
+%===============================END OF FILE===============================

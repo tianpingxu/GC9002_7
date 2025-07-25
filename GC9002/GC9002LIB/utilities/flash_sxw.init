@@ -1,0 +1,1 @@
+download bin verify=no address=0x08000000 $(ProjectPath)/Obj//GC9002LIB_0x8000000.bin

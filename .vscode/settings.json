@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ahmiinterface.h": "c",
+        "gc90x_shmemmanage.h": "c",
+        "gc90xx_hal.h": "c"
+    }
+}

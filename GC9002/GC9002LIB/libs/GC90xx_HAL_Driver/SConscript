@@ -1,0 +1,11 @@
+from building import *
+
+# init src and inc vars
+cwd     = GetCurrentDir()
+inc     = [cwd, cwd + '/Inc']
+src     = Glob('Src/*.c')
+CPPPATH = inc
+
+group = DefineGroup('GC90xx_HAL_DRIVER', src, depend = ['RT_USING_HAL_DRIVER'], CPPPATH = CPPPATH)
+
+Return('group')

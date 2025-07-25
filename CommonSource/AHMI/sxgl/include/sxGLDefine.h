@@ -1,0 +1,15 @@
+#ifndef SXGL_DEFINITION__H
+#define SXGL_DEFINITION__H
+
+#include "AHMICfgDefinition.h"
+
+
+#define GL_OPERATION_TYPE_FLOAT
+//#define GL_OPERATION_TYPE_FIXED
+#define GL_MATRIX_A_FIXED_POINT 20
+#define GL_MATRIX_G_FIXED_POINT 13
+#define GL_VALUE_FIXED_POINT    16
+#define GL_FIXED_ONE            (1<<GL_VALUE_FIXED_POINT)
+
+
+#endif

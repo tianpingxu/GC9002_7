@@ -1,0 +1,84 @@
+#ifndef __CFG_AUTOGEN_C1_H
+#define __CFG_AUTOGEN_C1_H
+
+#include <stdio.h>
+#include <stdint.h>
+#include "cfg_autogen_ct.h"
+
+
+
+void CFG_SetCfgPtr(CFG_tstUpgCfg *pCfg);
+CFG_tstUpgCfg* CFG_GetCfgPtrOnRom(void);
+uint32_t CFG_Get_valid_flag(void);
+uint16_t CFG_Get_version(void);
+uint16_t CFG_Get_checksum(void);
+uint32_t CFG_Get_size(void);
+uint8_t CFG_Get_cfg_uart(void);
+uint8_t CFG_Get_cfg_can(void);
+uint8_t CFG_Get_cfg_sd(void);
+uint8_t CFG_Get_cfg_usb(void);
+uint16_t CFG_Get_can_uart_wait_ms(void);
+uint8_t* CFG_Get_res_upg(void);
+uint8_t CFG_Get_uart_channel(void);
+uint8_t CFG_Get_uart_tx_port(void);
+uint8_t CFG_Get_uart_tx_pin(void);
+uint8_t CFG_Get_uart_rx_port(void);
+uint8_t CFG_Get_uart_rx_pin(void);
+uint8_t CFG_Get_uart_baud(void);
+uint8_t* CFG_Get_res_uart(void);
+uint32_t CFG_Get_can_recv_addr(void);
+uint32_t CFG_Get_can_send_addr(void);
+uint32_t CFG_Get_can_filter_id0(void);
+uint32_t CFG_Get_can_filter_mask0(void);
+uint32_t CFG_Get_can_filter_id1(void);
+uint32_t CFG_Get_can_filter_mask1(void);
+uint8_t CFG_Get_can_channel(void);
+uint8_t CFG_Get_canfd_baud_slow(void);
+uint8_t CFG_Get_canfd_baud_fast(void);
+uint8_t CFG_Get_can_tx_port(void);
+uint8_t CFG_Get_can_tx_pin(void);
+uint8_t CFG_Get_can_rx_port(void);
+uint8_t CFG_Get_can_rx_pin(void);
+uint8_t CFG_Get_can_if_transceiver_ctrl(void);
+uint8_t CFG_Get_can_transceiver_port(void);
+uint8_t CFG_Get_can_transceiver_pin(void);
+uint8_t* CFG_Get_res_can(void);
+uint8_t CFG_Get_sd_spi_channel(void);
+uint8_t* CFG_Get_res_sd(void);
+uint8_t CFG_Get_usb_if_use_enable(void);
+uint8_t CFG_Get_usb_ctrl_enable_port(void);
+uint8_t CFG_Get_usb_ctrl_enable_pin(void);
+uint8_t CFG_Get_usb_if_use_insert_check(void);
+uint8_t CFG_Get_usb_ctrl_insert_check_port(void);
+uint8_t CFG_Get_usb_ctrl_insert_check_pin(void);
+uint8_t* CFG_Get_res_usb(void);
+uint8_t CFG_Get_touch_x_plus_port(void);
+uint8_t CFG_Get_touch_x_plus_pin(void);
+uint8_t CFG_Get_touch_y_plus_port(void);
+uint8_t CFG_Get_touch_y_plus_pin(void);
+uint8_t CFG_Get_touch_x_sub_port(void);
+uint8_t CFG_Get_touch_x_sub_pin(void);
+uint8_t CFG_Get_touch_y_sub_port(void);
+uint8_t CFG_Get_touch_y_sub_pin(void);
+uint8_t CFG_Get_touch_i2c_scl_port(void);
+uint8_t CFG_Get_touch_i2c_scl_pin(void);
+uint8_t CFG_Get_touch_i2c_sda_port(void);
+uint8_t CFG_Get_touch_i2c_sda_pin(void);
+uint8_t CFG_Get_touch_i2c_irq_port(void);
+uint8_t CFG_Get_touch_i2c_irq_pin(void);
+uint8_t CFG_Get_touch_i2c_rst_port(void);
+uint8_t CFG_Get_touch_i2c_rst_pin(void);
+uint8_t* CFG_Get_res_touch(void);
+uint8_t CFG_Get_sys_if_use_pro_bin(void);
+uint8_t CFG_Get_sys_if_use_display(void);
+uint8_t CFG_Get_sys_if_bl_all_on(void);
+uint8_t CFG_Get_sys_ctrl_bl_port(void);
+uint8_t CFG_Get_sys_ctrl_bl_pin(void);
+uint8_t CFG_Get_sys_buzzer_port(void);
+uint8_t CFG_Get_sys_buzzer_pin(void);
+uint8_t CFG_Get_sys_test_port(void);
+uint8_t CFG_Get_sys_test_pin(void);
+uint8_t CFG_Get_sys_if_partial_refresh_en(void);
+uint8_t* CFG_Get_res_sys(void);
+
+#endif

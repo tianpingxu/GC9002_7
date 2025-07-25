@@ -1,0 +1,13 @@
+////////////////////////////////////////////////////////////////////////////////
+// Company:      SX
+// Engineer:     AHMI小组成员
+//
+// Create Date:   2018/10/16
+// File Name:     SpiDriver.cpp
+// Project Name:  AHMIGEN_V2.0
+// 
+// Revision:
+// Revision 2.00 - File Created 2018/10/18 by Zhou Yuzhi
+// Additional Comments:
+//     the driver layer for spi
+////////////////////////////////////////////////////////////////////////////////

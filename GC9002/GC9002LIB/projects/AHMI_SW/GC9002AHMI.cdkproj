@@ -1,0 +1,2169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Name="GC9002AHMI" Version="1" Language="C">
+  <Description/>
+  <Dependencies Name="Debug"/>
+  <VendorInfo>
+    <VendorName>NULL</VendorName>
+  </VendorInfo>
+  <MonitorProgress>
+    <DebugLaunch>53</DebugLaunch>
+    <FlashOperate>164</FlashOperate>
+  </MonitorProgress>
+  <ToolsConfig>
+    <Compiler>
+      <Name>XTGccElfNewlib</Name>
+      <Version>latest</Version>
+    </Compiler>
+  </ToolsConfig>
+  <VirtualDirectory Name="GC9002LIB">
+    <VirtualDirectory Name="board">
+      <File Name="../../board/board.c">
+        <FileOption/>
+      </File>
+      <File Name="../../board/board.h">
+        <FileOption/>
+      </File>
+    </VirtualDirectory>
+    <VirtualDirectory Name="csi_core">
+      <VirtualDirectory Name="include">
+        <File Name="../../csi_core/include/core_rv32.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_core/include/csi_core.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_core/include/csi_rv32_gcc.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="csi_kernel">
+      <VirtualDirectory Name="freertosv10.3">
+        <VirtualDirectory Name="adapter">
+          <File Name="../../csi_kernel/freertosv10.3.1/adapter/csi_freertos.c">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="FreeRTOS">
+          <VirtualDirectory Name="Source">
+            <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/croutine.c">
+              <FileOption/>
+            </File>
+            <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/event_groups.c">
+              <FileOption/>
+            </File>
+            <VirtualDirectory Name="include">
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/atomic.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/croutine.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/deprecated_definitions.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/event_groups.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/FreeRTOS.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/list.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/message_buffer.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/mpu_prototypes.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/mpu_wrappers.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/portable.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/projdefs.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/queue.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/semphr.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/StackMacros.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/stack_macros.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/stdint.readme">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/stream_buffer.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/task.h">
+                <FileOption/>
+              </File>
+              <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include/timers.h">
+                <FileOption/>
+              </File>
+            </VirtualDirectory>
+            <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/list.c">
+              <FileOption/>
+            </File>
+            <VirtualDirectory Name="portable">
+              <VirtualDirectory Name="GCC">
+                <VirtualDirectory Name="riscv">
+                  <VirtualDirectory Name="chip_specific_extensions">
+                    <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/GCC/riscv/chip_specific_extensions/readme.txt">
+                      <FileOption/>
+                    </File>
+                    <VirtualDirectory Name="thead_rv32">
+                      <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/GCC/riscv/chip_specific_extensions/thead_rv32/freertos_risc_v_chip_specific_extensions.h">
+                        <FileOption/>
+                      </File>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/GCC/riscv/port.c">
+                    <FileOption/>
+                  </File>
+                  <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/GCC/riscv/portASM.S">
+                    <FileOption/>
+                  </File>
+                  <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/GCC/riscv/portmacro.h">
+                    <FileOption/>
+                  </File>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="MemMang">
+                <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/MemMang/heap_4.c">
+                  <FileOption/>
+                </File>
+                <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/MemMang/ReadMe.url">
+                  <FileOption/>
+                </File>
+              </VirtualDirectory>
+            </VirtualDirectory>
+            <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/queue.c">
+              <FileOption/>
+            </File>
+            <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/README.md">
+              <FileOption/>
+            </File>
+            <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/stream_buffer.c">
+              <FileOption/>
+            </File>
+            <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/tasks.c">
+              <FileOption/>
+            </File>
+            <File Name="../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/timers.c">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="License">
+          <File Name="../../csi_kernel/freertosv10.3.1/License/license.txt">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <File Name="../../csi_kernel/freertosv10.3.1/readme.txt">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="include">
+        <File Name="../../csi_kernel/include/csi_kernel.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="linkscripts">
+      <File Name="../../linkscripts/gcc_ahmi_CodeFlash_RamHyper.ld">
+        <FileOption/>
+      </File>
+      <File Name="../../linkscripts/gcc_ahmi_CodeFlash_RamSram.ld">
+        <FileOption/>
+      </File>
+      <File Name="../../linkscripts/gcc_ahmi_CodeHyper_RamHyper.ld">
+        <FileOption/>
+      </File>
+    </VirtualDirectory>
+    <VirtualDirectory Name="csi_driver">
+      <File Name="../../csi_driver/csi_crc.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_dma.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_gpio.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_gpio_pin.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_i2s.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_iic.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_irq.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_irq_vectors.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_motor.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_pin.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_porting.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_pwm.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_qspi.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_rtc.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_spi.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_spiflash.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_tick.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_timer.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_triangle.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_uart.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/csi_wdt.c">
+        <FileOption/>
+      </File>
+      <File Name="../../csi_driver/drv_eth.c">
+        <FileOption/>
+      </File>
+      <VirtualDirectory Name="include">
+        <File Name="../../csi_driver/include/csi_common.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_crc.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_dma.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_gpio.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_gpio_pin.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_i2s.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_iic.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_irq.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_irq_vectors.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_motor.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_pin.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_porting.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_pwm.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_qspi.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_rtc.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_spi.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_spiflash.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_tick.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_timer.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_triangle.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_uart.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/csi_wdt.h">
+          <FileOption/>
+        </File>
+        <File Name="../../csi_driver/include/drv_eth.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="libs">
+      <VirtualDirectory Name="CMSIS">
+        <VirtualDirectory Name="Device">
+          <VirtualDirectory Name="GC9002">
+            <VirtualDirectory Name="Include">
+              <File Name="../../libs/CMSIS/Device/GC9002/Include/soc.h">
+                <FileOption/>
+              </File>
+              <File Name="../../libs/CMSIS/Device/GC9002/Include/system.h">
+                <FileOption/>
+              </File>
+            </VirtualDirectory>
+            <VirtualDirectory Name="Source">
+              <File Name="../../libs/CMSIS/Device/GC9002/Source/startup.S">
+                <FileOption/>
+              </File>
+              <File Name="../../libs/CMSIS/Device/GC9002/Source/startup.S.bak">
+                <FileOption/>
+              </File>
+              <File Name="../../libs/CMSIS/Device/GC9002/Source/system.c">
+                <FileOption/>
+              </File>
+              <File Name="../../libs/CMSIS/Device/GC9002/Source/trap_c.c">
+                <FileOption/>
+              </File>
+              <File Name="../../libs/CMSIS/Device/GC9002/Source/vectors.S">
+                <FileOption/>
+              </File>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="display">
+        <File Name="../../libs/display/display.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_888.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_888.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_gc9307n.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_gc9307n.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_leike.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_leike.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_mrb3205.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_mrb3205.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_rgb565.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_rgb565.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_sjxd.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_sjxd.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_st7512.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_st7512.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_st7735s.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_st7735s.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_st77903.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_st77903.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_tft128qm071.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_tft128qm071.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/readme.md">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/display/display_conf.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="GC9002_HAL_Driver">
+        <VirtualDirectory Name="Inc">
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_adc.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_ahmi.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_ccm.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_crc32.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_display.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_dma.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_eth.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_extension.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_hyper.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_pmu.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_rcc.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_usb.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_usbd.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_hal_wdt.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_ll_ahmi.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/gc9002_ll_display.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Inc/mmalloc.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="Src">
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_adc.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_ahmi.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_ccm.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_crc32.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_display.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_dma.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_eth.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_extension.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_hyper.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_pmu.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_rcc.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_usb.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_usbd.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_hal_wdt.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_ll_ahmi.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc9002_ll_display.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/gc90xx_hal.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC9002_HAL_Driver/Src/mmalloc.c">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="GC90xx_HAL_Driver">
+        <VirtualDirectory Name="Inc">
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_can.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_canfd.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_conf_template.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_def.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_gpio.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_i2c.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_i2s.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_mmc.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_motorpwm.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_rtc.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_sd.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_spi.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_tim.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_tim_ex.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_uart.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_hal_videocap.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_ll_qspi.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_ll_sdmmc.h">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Inc/gc90xx_ll_spi.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <File Name="../../libs/GC90xx_HAL_Driver/SConscript">
+          <FileOption/>
+        </File>
+        <VirtualDirectory Name="Src">
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_can.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_canfd.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_gpio.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_i2c.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_i2s.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_mmc.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_rtc.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_sd.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_spi.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_tim.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_tim_ex.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_uart.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_hal_videocap.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_ll_qspi.c">
+            <FileOption/>
+          </File>
+          <File Name="../../libs/GC90xx_HAL_Driver/Src/gc90xx_ll_sdmmc.c">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="include">
+        <File Name="../../libs/include/errno.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/include/mm.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/include/mm_queue.h">
+          <FileOption/>
+        </File>
+        <VirtualDirectory Name="ringbuffer">
+          <File Name="../../libs/include/ringbuffer/ringbuffer.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="sys">
+          <File Name="../../libs/include/sys/_stdint.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <File Name="../../libs/include/syslog.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/include/time.h">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/include/umm_heap.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="libc">
+        <File Name="../../libs/libc/malloc.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/libc/minilibc_port.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/libc/printf.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/libc/_init.c">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="mm">
+        <File Name="../../libs/mm/dq_addlast.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/mm/dq_rem.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/mm/lib_mallinfo.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/mm/mm_addfreechunk.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/mm/mm_free.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/mm/mm_initialize.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/mm/mm_leak.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/mm/mm_mallinfo.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/mm/mm_malloc.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/mm/mm_size2ndx.c">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="ringbuffer">
+        <File Name="../../libs/ringbuffer/ringbuffer.c">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="soft_libc">
+        <File Name="../../libs/soft_libc/soft_libc.c">
+          <FileOption/>
+        </File>
+        <File Name="../../libs/soft_libc/soft_libc.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="syslog">
+        <File Name="../../libs/syslog/syslog.c">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="APP">
+    <VirtualDirectory Name="ahmi">
+      <VirtualDirectory Name="app">
+        <File Name="Source/ahmi/app/ahmiv4.c">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/app/ahmiv4.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/app/CPU1_Version.c">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/app/gc90x_config.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/app/gc90x_heap.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/app/gc90x_heap.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/app/gc90x_initial.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/app/gc90x_initial.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/app/platform.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="GClib">
+        <VirtualDirectory Name="inc">
+          <File Name="Source/ahmi/GClib/inc/gc90x_ahmi.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/inc/gc90x_AHMIClock.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/inc/gc90x_bt656.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/inc/gc90x_cache.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/inc/gc90x_display.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/inc/gc90x_fix.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/inc/gc90x_shmemmanage.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="src">
+          <File Name="Source/ahmi/GClib/src/gc90x_ahmi.c">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/src/gc90x_bt656.c">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/src/gc90x_cache.c">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/src/gc90x_fix.c">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/src/gc90x_shmemmanage.c">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/GClib/src/gc90x_display.cpp">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="itm">
+        <VirtualDirectory Name="adapt">
+          <File Name="Source/ahmi/itm/adapt/ITM1ce.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/itm/adapt/ITM1ci.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/itm/adapt/ITM1ct.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="core">
+          <File Name="Source/ahmi/itm/core/ITM1c1.c">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/itm/core/ITM1c1.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="MiddleWare">
+        <File Name="Source/ahmi/MiddleWare/MidTimer.c">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/MiddleWare/MidTimer.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="ParseParameter">
+        <File Name="Source/ahmi/ParseParameter/ParsePara.c">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/ParseParameter/ParsePara.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="sbm">
+        <VirtualDirectory Name="adapt">
+          <File Name="Source/ahmi/sbm/adapt/SBM1ce.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/sbm/adapt/SBM1ci.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/sbm/adapt/SBM1ct.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="core">
+          <File Name="Source/ahmi/sbm/core/SBM1c1.c">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/sbm/core/SBM1c1.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Touch">
+        <File Name="Source/ahmi/Touch/AHMITouch.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/AHMITouch.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/AHMITouchDefine.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/bsp_i2c_touch.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/bsp_i2c_touch.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/gc90x_touch.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/gc90x_touch.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/gt9xx.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/gt9xx.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/i2c_aw2083.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/i2c_aw2083.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/capacitiveTouch_Interface.c">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/capacitiveTouch_Interface.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/cst820.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/cst820.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/cst836u.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/cst836u.h">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/STTouch.cpp">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/Touch/STTouch.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SBBatchDraw">
+        <File Name="Source/ahmi/SBBatchDraw/SBBatchDraw.c">
+          <FileOption/>
+        </File>
+        <File Name="Source/ahmi/SBBatchDraw/SBBatchDraw.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="adcshare">
+        <VirtualDirectory Name="adcshare">
+          <VirtualDirectory Name="adapt">
+            <File Name="Source/ahmi/adcshare/adapt/adcshare_ce.h">
+              <FileOption/>
+            </File>
+            <File Name="Source/ahmi/adcshare/adapt/adcshare_ci.h">
+              <FileOption/>
+            </File>
+            <File Name="Source/ahmi/adcshare/adapt/adcshare_ct.h">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+          <File Name="Source/ahmi/adcshare/adcshare.c" ExcludeProjConfig="BuildSet">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/adcshare/adcshare.h">
+            <FileOption/>
+          </File>
+          <VirtualDirectory Name="core">
+            <File Name="Source/ahmi/adcshare/core/adcshare_c1.c">
+              <FileOption/>
+            </File>
+            <File Name="Source/ahmi/adcshare/core/adcshare_c1.h">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="com">
+        <VirtualDirectory Name="adapt">
+          <File Name="Source/ahmi/com/adapt/com_ce.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/com/adapt/com_ci.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="core">
+          <File Name="Source/ahmi/com/core/com_c1.c">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/com/core/com_c1.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/com/core/com_ct.h">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/com/core/com_fifo.c">
+            <FileOption/>
+          </File>
+          <File Name="Source/ahmi/com/core/com_fifo.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="FreeRTOSConfig">
+      <File Name="Source/FreeRTOSConfig/FreeRTOSConfig.h">
+        <FileOption/>
+      </File>
+    </VirtualDirectory>
+    <VirtualDirectory Name="CommonSource">
+      <VirtualDirectory Name="AHMI">
+        <File Name="../../../../CommonSource/AHMI/ActionProcessor.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/ActionProcessor.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/ActionTrigger.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/ActionTriggerClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/ActionTriggerClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/ActionTriggerClass_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/ActionTriggerClass_cd.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/AHMIBasicDefine.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/AHMIBasicStructure.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/aniamtion.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/animation.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/animationAction.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/animationAction.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/animationDefine.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/animationQueueHandler.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/animationQueueHandler.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/CanvasClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/canvasClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/canvasClass_c1.h">
+          <FileOption/>
+        </File>
+        <VirtualDirectory Name="Config">
+          <File Name="../../../../CommonSource/AHMI/Config/AHMICfgDefinition.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Config/privateInclude.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Config/publicDefine.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Config/publicInclude.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Config/publicType.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="csi_ahmi">
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi_bt656.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi_bt656.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi_fix.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi_fix.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi_hw.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi_hw.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi_i2s.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/csi_ahmi/csi_ahmi_i2s.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <File Name="../../../../CommonSource/AHMI/DelayArg.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/drawImmediately_cd.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/DynamicPageCfgClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/DynamicPageCfgClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/DynamicPageClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/DynamicPageClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/DynamicPageClass_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/Easing.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/Easing.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/encoding.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/encoding.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/FileLoad.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/FileLoad.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/FontlayoutEngine.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/FontlayoutEngine.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/Hinter.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/Hinter.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/InterruptTask.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/InterruptTask.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/IntervalClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/IntervalClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/keyboard.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/keyboard.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/keyboard_cd.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/matrixClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/matrixClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/myMathClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/myMathClass.h">
+          <FileOption/>
+        </File>
+        <VirtualDirectory Name="Player">
+          <VirtualDirectory Name="adapt">
+            <File Name="../../../../CommonSource/AHMI/Player/adapt/player1ce.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/Player/adapt/player1ci.h">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+          <VirtualDirectory Name="core">
+            <File Name="../../../../CommonSource/AHMI/Player/core/player1c1.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/Player/core/player1c1.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/Player/core/player1ct.h">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <File Name="../../../../CommonSource/AHMI/publicVariables.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/RefreshMsgClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/refreshMsgClass_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/refreshQueueHandler.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/refreshQueueHandler.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/refreshQueueHandler_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/refreshQueueHandler_cd.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/SdlPlayer.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/SdlPlayer.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/StringClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/StringClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/subCanvasClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/subCanvasClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/TagClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/TagClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/tagClassCfg.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/tagClass_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/tagClass_cd.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/tagUpdate.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/tagUpdate.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/tagUpdateClass_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/TextureClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/TextureClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/TextureClass_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/textureClass_cd.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/tileBoxClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/tileBoxClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/TimerClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/TimerClass.h">
+          <FileOption/>
+        </File>
+        <VirtualDirectory Name="Touch">
+          <File Name="../../../../CommonSource/AHMI/Touch/TouchTask.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Touch/TouchTask.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <File Name="../../../../CommonSource/AHMI/trace.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/validation.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/validation.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/WaveFilter.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/WaveFilter.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/WaveFilterTickArg.h">
+          <FileOption/>
+        </File>
+        <VirtualDirectory Name="Widget">
+          <File Name="../../../../CommonSource/AHMI/Widget/AlphaImg.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/AlphaImg.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/AlphaSlide.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/AlphaSlide.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ButtonClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ButtonClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ButtonSwitch.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ButtonSwitch.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/Chart.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/Chart.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/CircleSliderClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/CircleSliderClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ClockBoardClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ClockBoardClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ClockClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ClockClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/CombinationSwitch.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/CombinationSwitch.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/DataImage.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/DataImage.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/DynamicTexClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/DynamicTexClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/GalleryClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/GalleryClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/IOClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/IOClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/KeyboardContainer.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/KeyboardContainer.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/KnobClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/KnobClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/MenuContainer.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/MenuContainer.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/MeterClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/MeterClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/movingTexture.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/NumberClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/NumberClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/OnOffTexture.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/OnOffTexture.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ProgBarClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ProgBarClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/QRcodeClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/QRcodeClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/SelectorClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/SelectorClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/SliderClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/SliderClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/SwipeResponderClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/SwipeResponderClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TextClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TextClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TextInput.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TextInput.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TextureNumberClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TextureNumberClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TextureTimeClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TextureTimeClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TouchTrack.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/TouchTrack.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/VideoClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/VideoClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/WriteTexture.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/WriteTexture.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/BarChart.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/BarChart.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/Gif.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/Gif.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/PieChart.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/PieChart.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/Custom.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/Custom.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ListClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ListClass.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ThreeDimensionalClass.cpp">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/AHMI/Widget/ThreeDimensionalClass.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <File Name="../../../../CommonSource/AHMI/widgetClass.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/widgetClass.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/WidgetClassInterface.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/WidgetClassInterface.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/widgetClassInterface_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/widgetClass_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/widgetClass_cd.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/normalizer.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/AHMI/normalizer.h">
+          <FileOption/>
+        </File>
+        <VirtualDirectory Name="sxgl">
+          <VirtualDirectory Name="include">
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxClip.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxCull.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGL.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLApplication.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLBuffer.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLDefine.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLMath.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLObject.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLObjIn.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLOperator.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLPipeline.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLSourceBuffer.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGLState.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxGL_draw.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxLight.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxMatrix.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/include/sxTexture.h">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+          <VirtualDirectory Name="source">
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxClip.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxCull.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGLApplication.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGLBuffer.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGLMath.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGLObject.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGLObjIn.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGLOperator.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGLPipeline.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGLSourceBuffer.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGLState.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxGL_draw.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxLight.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxMatrix.cpp">
+              <FileOption/>
+            </File>
+            <File Name="../../../../CommonSource/AHMI/sxgl/source/sxTexture.cpp">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="csi_hal">
+        <VirtualDirectory Name="csi_hal_core">
+          <File Name="../../../../CommonSource/csi_hal/csi_hal_core/csi_hal_core.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/csi_hal/csi_hal_core/csi_hal_core.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="csi_hal_driver">
+          <File Name="../../../../CommonSource/csi_hal/csi_hal_driver/csi_hal_driver_flash.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/csi_hal/csi_hal_driver/csi_hal_driver_flash.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/csi_hal/csi_hal_driver/ahmi_flash_driver_interface.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/csi_hal/csi_hal_driver/ahmi_flash_driver_interface.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="csi_hal_isr">
+          <File Name="../../../../CommonSource/csi_hal/csi_hal_isr/csi_hal_isr.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/csi_hal/csi_hal_isr/csi_hal_isr.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="EM">
+        <VirtualDirectory Name="adapt">
+          <File Name="../../../../CommonSource/EM/adapt/em_ci.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="core">
+          <File Name="../../../../CommonSource/EM/core/em_c1.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/EM/core/em_c1.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/EM/core/em_ct.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Main">
+        <File Name="../../../../CommonSource/Main/AHMIInterface.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/Main/AHMIInterface.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/Main/main.cpp">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="qrencode-3.4">
+        <File Name="../../../../CommonSource/qrencode-3.4.4/bitstream.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/bitstream.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/ChangeLog">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/config.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/config.h.in">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/mask.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/mask.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/mmask.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/mmask.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/mqrspec.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/mqrspec.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/qrencode.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/qrencode.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/qrencode_inner.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/qrinput.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/qrinput.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/qrmemory.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/qrspec.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/qrspec.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/README">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/rscode.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/rscode.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/split.cpp">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/split.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../CommonSource/qrencode-3.4.4/TODO">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SM">
+        <VirtualDirectory Name="core">
+          <File Name="../../../../CommonSource/SM/core/sm_c1.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../CommonSource/SM/core/sm_c1.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="csi_config">
+      <File Name="Source/csi_config/csi_config.h">
+        <FileOption/>
+      </File>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Cfg">
+      <VirtualDirectory Name="adapt">
+        <File Name="../Bootloader/Source/Cfg/adapt/cfg_autogen_c1.h">
+          <FileOption/>
+        </File>
+        <File Name="../Bootloader/Source/Cfg/adapt/cfg_autogen_ca.c">
+          <FileOption/>
+        </File>
+        <File Name="../Bootloader/Source/Cfg/adapt/cfg_autogen_ct.h">
+          <FileOption/>
+        </File>
+        <File Name="../Bootloader/Source/Cfg/adapt/cfg_ca.c">
+          <FileOption/>
+        </File>
+        <File Name="../Bootloader/Source/Cfg/adapt/cfg_ca.h">
+          <FileOption/>
+        </File>
+        <File Name="../Bootloader/Source/Cfg/adapt/cfg_ci.h">
+          <FileOption/>
+        </File>
+        <File Name="../Bootloader/Source/Cfg/adapt/cfg_ct.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="core">
+        <File Name="../Bootloader/Source/Cfg/core/cfg_c1.c">
+          <FileOption/>
+        </File>
+        <File Name="../Bootloader/Source/Cfg/core/cfg_c1.h">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="tool" ExcludeProjConfig="BuildSet">
+        <File Name="../Bootloader/Source/Cfg/tool/Bootloader_upgrade_related_cfg.xlsm">
+          <FileOption/>
+        </File>
+        <File Name="../Bootloader/Source/Cfg/tool/copyToCompilePath.bat">
+          <FileOption/>
+        </File>
+        <File Name="../Bootloader/Source/Cfg/tool/handleExcel.exe">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="hal_config">
+      <File Name="Source/hal_config/gc90xx_hal_conf.h">
+        <FileOption/>
+      </File>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="CustomerApp">
+    <File Name="CustomerApp/CustomerAppMain.c">
+      <FileOption/>
+    </File>
+    <File Name="CustomerApp/CustomerAppMain.h">
+      <FileOption/>
+    </File>
+    <File Name="CustomerApp/crc16.c">
+      <FileOption/>
+    </File>
+    <File Name="CustomerApp/protocol.c">
+      <FileOption/>
+    </File>
+    <File Name="CustomerApp/read_reg.c">
+      <FileOption/>
+    </File>
+    <File Name="CustomerApp/crc16.h">
+      <FileOption/>
+    </File>
+    <File Name="CustomerApp/protocol.h">
+      <FileOption/>
+    </File>
+    <File Name="CustomerApp/read_reg.h">
+      <FileOption/>
+    </File>
+    <File Name="CustomerApp/Readme.txt">
+      <FileOption/>
+    </File>
+    <File Name="CustomerApp/template_flash.c">
+      <FileOption/>
+    </File>
+  </VirtualDirectory>
+  <BuildConfigs>
+    <BuildConfig Name="BuildSet">
+      <Target>
+        <ROMBank Selected="1">
+          <ROM1>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM1>
+          <ROM2>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM2>
+          <ROM3>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM3>
+          <ROM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM4>
+          <ROM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM5>
+        </ROMBank>
+        <RAMBank>
+          <RAM1>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM1>
+          <RAM2>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM2>
+          <RAM3>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM3>
+          <RAM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM4>
+          <RAM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM5>
+        </RAMBank>
+        <CPU>e902m</CPU>
+        <UseMiniLib>yes</UseMiniLib>
+        <Endian>little</Endian>
+        <UseHardFloat>no</UseHardFloat>
+        <UseEnhancedLRW>no</UseEnhancedLRW>
+        <UseContinueBuild>no</UseContinueBuild>
+        <UseSemiHost>no</UseSemiHost>
+      </Target>
+      <Output>
+        <OutputName>$(ProjectName)</OutputName>
+        <Type>Executable</Type>
+        <CreateHexFile>no</CreateHexFile>
+        <CreateBinFile>no</CreateBinFile>
+        <Preprocessor>no</Preprocessor>
+        <Disassmeble>yes</Disassmeble>
+        <CallGraph>no</CallGraph>
+        <Map>yes</Map>
+      </Output>
+      <User>
+        <BeforeCompile>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeCompile>
+        <BeforeMake>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeMake>
+        <AfterMake>
+          <RunUserProg>yes</RunUserProg>
+          <UserProgName>$(ProjectPath)/cpu1_crc_add.sh</UserProgName>
+        </AfterMake>
+        <Tools/>
+      </User>
+      <Compiler>
+        <Define>USE_HAL_DRIVER;CHIP_GC9002</Define>
+        <Undefine/>
+        <Optim>Optimize more (-O2)</Optim>
+        <DebugLevel>Maximum (-g3)</DebugLevel>
+        <IncludePath>$(ProjectPath)/;$(ProjectPath)/../../../../CommonSource/AHMI;$(ProjectPath)/../../../../CommonSource/AHMI/Config;$(ProjectPath)/../../../../CommonSource/AHMI/Driver;$(ProjectPath)/../../../../CommonSource/AHMI/Player/adapt;$(ProjectPath)/../../../../CommonSource/AHMI/Player/core;$(ProjectPath)/../../../../CommonSource/AHMI/Simulator;$(ProjectPath)/../../../../CommonSource/AHMI/Touch;$(ProjectPath)/../../../../CommonSource/AHMI/Widget;$(ProjectPath)/../../../../CommonSource/AHMI/csi_ahmi;$(ProjectPath)/../../../../CommonSource/AHMI/sxgl/include;$(ProjectPath)/../../../../CommonSource/AHMI/testFunc;$(ProjectPath)/../../../../CommonSource/EM/adapt;$(ProjectPath)/../../../../CommonSource/EM/core;$(ProjectPath)/../../../../CommonSource/Main;$(ProjectPath)/../../../../CommonSource/SM/core;$(ProjectPath)/../../../../CommonSource/csi_hal/csi_hal_core;$(ProjectPath)/../../../../CommonSource/csi_hal/csi_hal_driver;$(ProjectPath)/../../../../CommonSource/csi_hal/csi_hal_isr;$(ProjectPath)/../../../../CommonSource/qrencode-3.4.4;$(ProjectPath)/../../ahmi/GClib/inc;$(ProjectPath)/../../ahmi/MiddleWare;$(ProjectPath)/../../ahmi/ParseParameter;$(ProjectPath)/../../ahmi/Touch;$(ProjectPath)/../../ahmi/app;$(ProjectPath)/../../ahmi/itm/adapt;$(ProjectPath)/../../ahmi/itm/core;$(ProjectPath)/../../ahmi/sbm/adapt;$(ProjectPath)/../../ahmi/sbm/core;$(ProjectPath)/../../application;$(ProjectPath)/../../application/sample;$(ProjectPath)/../../application/template;$(ProjectPath)/../../board;$(ProjectPath)/../../csi_core/include;$(ProjectPath)/../../csi_driver/include;$(ProjectPath)/../../csi_driver/smartl_rv32/include;$(ProjectPath)/../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include;$(ProjectPath)/../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/GCC/riscv;$(ProjectPath)/../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/GCC/riscv/chip_specific_extensions/thead_rv32;$(ProjectPath)/../../csi_kernel/freertosv10.3.1/include;$(ProjectPath)/../../csi_kernel/include;$(ProjectPath)/../../csi_kernel/include/;$(ProjectPath)/../../libs/CMSIS/Device/GC9002/Include;$(ProjectPath)/../../libs/GC9002_HAL_Driver/Inc;$(ProjectPath)/../../libs/GC90xx_HAL_Driver/Inc;$(ProjectPath)/../../libs/display;$(ProjectPath)/../../libs/include;$(ProjectPath)/../../libs/include/ringbuffer;$(ProjectPath)/../../libs/include/sys;$(ProjectPath)/../../libs/soft_libc;$(ProjectPath)/../../packages/CherryUSB;$(ProjectPath)/../../packages/CherryUSB/class/cdc;$(ProjectPath)/../../packages/CherryUSB/class/hub;$(ProjectPath)/../../packages/CherryUSB/class/msc;$(ProjectPath)/../../packages/CherryUSB/common;$(ProjectPath)/../../packages/CherryUSB/core;$(ProjectPath)/../../packages/CherryUSB/osal;$(ProjectPath)/../../packages/CherryUSB/port/musb;$(ProjectPath)/../../packages/FF13;$(ProjectPath)/../../packages/at/at_socket;$(ProjectPath)/../../packages/at/config;$(ProjectPath)/../../packages/at/hal;$(ProjectPath)/../../packages/at/include;$(ProjectPath)/../../packages/at_device-v2.0.4/at_main;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/basic_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/ble_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/mqtt_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/ota_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/tcpip_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/wifi_command;$(ProjectPath)/../../packages/at_device-v2.0.4/inc;$(ProjectPath)/../../packages/netdev/include;$(ProjectPath)/../../packages/netdev/include/arpa;$(ProjectPath)/../../packages/rt;$(ProjectPath)/../../packages/sal_socket/impl;$(ProjectPath)/../../packages/sal_socket/include;$(ProjectPath)/../../packages/sal_socket/include/dfs_net;$(ProjectPath)/../../packages/sal_socket/include/dfs_net/sys_select/sys;$(ProjectPath)/../../packages/sal_socket/include/socket;$(ProjectPath)/../../packages/sal_socket/include/socket/netinet;$(ProjectPath)/../../packages/sal_socket/include/socket/sys_socket/sys;$(ProjectPath)/../../packages/uip/port;$(ProjectPath)/../../packages/uip/src;$(ProjectPath)//FreeRTOSConfig;$(ProjectPath)/CustomerApp;$(ProjectPath)/Source/FreeRTOSConfig;$(ProjectPath)/Source/ahmi/GClib/inc;$(ProjectPath)/Source/ahmi/MiddleWare;$(ProjectPath)/Source/ahmi/ParseParameter;$(ProjectPath)/Source/ahmi/SBBatchDraw;$(ProjectPath)/Source/ahmi/Touch;$(ProjectPath)/Source/ahmi/adcshare;$(ProjectPath)/Source/ahmi/adcshare/adapt;$(ProjectPath)/Source/ahmi/adcshare/core;$(ProjectPath)/Source/ahmi/app;$(ProjectPath)/Source/ahmi/com/adapt;$(ProjectPath)/Source/ahmi/com/core;$(ProjectPath)/Source/ahmi/itm/adapt;$(ProjectPath)/Source/ahmi/itm/core;$(ProjectPath)/Source/ahmi/sbm/adapt;$(ProjectPath)/Source/ahmi/sbm/core;$(ProjectPath)/Source/csi_config;$(ProjectPath)/Source/hal_config;../../../../CommonSource/AHMI/sxgl/include/;../Bootloader/Source/Cfg/adapt/;../Bootloader/Source/Cfg/core/</IncludePath>
+        <OtherFlags>-ffunction-sections -fdata-sections -Wall -Wno-unused-function -Wno-unused-but-set-variable -Wno-comment -Wno-unused-variable -Wno-maybe-uninitialized -fno-exceptions</OtherFlags>
+        <Verbose>no</Verbose>
+        <Ansi>no</Ansi>
+        <Syntax>no</Syntax>
+        <Pedantic>no</Pedantic>
+        <PedanticErr>no</PedanticErr>
+        <InhibitWarn>no</InhibitWarn>
+        <AllWarn>yes</AllWarn>
+        <WarnErr>no</WarnErr>
+        <OneElfS>no</OneElfS>
+        <OneElfSPerData>no</OneElfSPerData>
+        <Fstrict>no</Fstrict>
+      </Compiler>
+      <Asm>
+        <Define/>
+        <Undefine/>
+        <IncludePath>$(ProjectPath)/;$(ProjectPath)/../../../../CommonSource/AHMI;$(ProjectPath)/../../../../CommonSource/AHMI/Config;$(ProjectPath)/../../../../CommonSource/AHMI/Driver;$(ProjectPath)/../../../../CommonSource/AHMI/Player/adapt;$(ProjectPath)/../../../../CommonSource/AHMI/Player/core;$(ProjectPath)/../../../../CommonSource/AHMI/Simulator;$(ProjectPath)/../../../../CommonSource/AHMI/Touch;$(ProjectPath)/../../../../CommonSource/AHMI/Widget;$(ProjectPath)/../../../../CommonSource/AHMI/csi_ahmi;$(ProjectPath)/../../../../CommonSource/AHMI/sxgl/include;$(ProjectPath)/../../../../CommonSource/AHMI/testFunc;$(ProjectPath)/../../../../CommonSource/EM/adapt;$(ProjectPath)/../../../../CommonSource/EM/core;$(ProjectPath)/../../../../CommonSource/Main;$(ProjectPath)/../../../../CommonSource/SM/core;$(ProjectPath)/../../../../CommonSource/csi_hal/csi_hal_core;$(ProjectPath)/../../../../CommonSource/csi_hal/csi_hal_driver;$(ProjectPath)/../../../../CommonSource/csi_hal/csi_hal_isr;$(ProjectPath)/../../../../CommonSource/qrencode-3.4.4;$(ProjectPath)/../../ahmi/GClib/inc;$(ProjectPath)/../../ahmi/MiddleWare;$(ProjectPath)/../../ahmi/ParseParameter;$(ProjectPath)/../../ahmi/Touch;$(ProjectPath)/../../ahmi/app;$(ProjectPath)/../../ahmi/itm/adapt;$(ProjectPath)/../../ahmi/itm/core;$(ProjectPath)/../../ahmi/sbm/adapt;$(ProjectPath)/../../ahmi/sbm/core;$(ProjectPath)/../../application;$(ProjectPath)/../../application/sample;$(ProjectPath)/../../application/template;$(ProjectPath)/../../board;$(ProjectPath)/../../csi_core/include;$(ProjectPath)/../../csi_driver/include;$(ProjectPath)/../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/include;$(ProjectPath)/../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/GCC/riscv;$(ProjectPath)/../../csi_kernel/freertosv10.3.1/FreeRTOS/Source/portable/GCC/riscv/chip_specific_extensions/thead_rv32;$(ProjectPath)/../../csi_kernel/freertosv10.3.1/include;$(ProjectPath)/../../csi_kernel/include;$(ProjectPath)/../../libs/CMSIS/Device/GC9002/Include;$(ProjectPath)/../../libs/GC9002_HAL_Driver/Inc;$(ProjectPath)/../../libs/GC90xx_HAL_Driver/Inc;$(ProjectPath)/../../libs/display;$(ProjectPath)/../../libs/include;$(ProjectPath)/../../libs/include/ringbuffer;$(ProjectPath)/../../libs/include/sys;$(ProjectPath)/../../libs/soft_libc;$(ProjectPath)/../../packages/CherryUSB;$(ProjectPath)/../../packages/CherryUSB/class/cdc;$(ProjectPath)/../../packages/CherryUSB/class/hub;$(ProjectPath)/../../packages/CherryUSB/class/msc;$(ProjectPath)/../../packages/CherryUSB/common;$(ProjectPath)/../../packages/CherryUSB/core;$(ProjectPath)/../../packages/CherryUSB/osal;$(ProjectPath)/../../packages/CherryUSB/port/musb;$(ProjectPath)/../../packages/FF13;$(ProjectPath)/../../packages/at/at_socket;$(ProjectPath)/../../packages/at/config;$(ProjectPath)/../../packages/at/hal;$(ProjectPath)/../../packages/at/include;$(ProjectPath)/../../packages/at_device-v2.0.4/at_main;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/basic_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/ble_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/mqtt_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/ota_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/tcpip_command;$(ProjectPath)/../../packages/at_device-v2.0.4/class/e103w11/wifi_command;$(ProjectPath)/../../packages/at_device-v2.0.4/inc;$(ProjectPath)/../../packages/netdev/include;$(ProjectPath)/../../packages/netdev/include/arpa;$(ProjectPath)/../../packages/rt;$(ProjectPath)/../../packages/sal_socket/impl;$(ProjectPath)/../../packages/sal_socket/include;$(ProjectPath)/../../packages/sal_socket/include/dfs_net;$(ProjectPath)/../../packages/sal_socket/include/dfs_net/sys_select/sys;$(ProjectPath)/../../packages/sal_socket/include/socket;$(ProjectPath)/../../packages/sal_socket/include/socket/netinet;$(ProjectPath)/../../packages/sal_socket/include/socket/sys_socket/sys;$(ProjectPath)/../../packages/uip/port;$(ProjectPath)/../../packages/uip/src;$(ProjectPath)//FreeRTOSConfig;$(ProjectPath)/CustomerApp;$(ProjectPath)/Source/FreeRTOSConfig;$(ProjectPath)/Source/ahmi/GClib/inc;$(ProjectPath)/Source/ahmi/MiddleWare;$(ProjectPath)/Source/ahmi/ParseParameter;$(ProjectPath)/Source/ahmi/SBBatchDraw;$(ProjectPath)/Source/ahmi/Touch;$(ProjectPath)/Source/ahmi/adcshare;$(ProjectPath)/Source/ahmi/adcshare/adapt;$(ProjectPath)/Source/ahmi/adcshare/core;$(ProjectPath)/Source/ahmi/app;$(ProjectPath)/Source/ahmi/com/adapt;$(ProjectPath)/Source/ahmi/com/core;$(ProjectPath)/Source/ahmi/itm/adapt;$(ProjectPath)/Source/ahmi/itm/core;$(ProjectPath)/Source/ahmi/sbm/adapt;$(ProjectPath)/Source/ahmi/sbm/core;$(ProjectPath)/Source/csi_config;$(ProjectPath)/Source/hal_config</IncludePath>
+        <OtherFlags/>
+        <DebugLevel>gdwarf2</DebugLevel>
+      </Asm>
+      <Linker>
+        <Garbage>yes</Garbage>
+        <Garbage2>yes</Garbage2>
+        <LDFile>$(ProjectPath)/../../linkscripts/gcc_ahmi_CodeFlash_RamHyper.ld</LDFile>
+        <LibName>m</LibName>
+        <LibPath/>
+        <OtherFlags>-Wl,-zmax-page-size=1024</OtherFlags>
+        <AutoLDFile>no</AutoLDFile>
+        <LinkType/>
+        <IncludeAllLibs>no</IncludeAllLibs>
+      </Linker>
+      <Debug>
+        <LoadApplicationAtStartup>yes</LoadApplicationAtStartup>
+        <Connector>ICE</Connector>
+        <StopAt>yes</StopAt>
+        <StopAtText>main</StopAtText>
+        <InitFile>$(ProjectPath)/../../utilities/gdb.init</InitFile>
+        <PreInit/>
+        <AfterLoadFile/>
+        <AutoRun>yes</AutoRun>
+        <ResetType>Hard Reset</ResetType>
+        <SoftResetVal>0</SoftResetVal>
+        <ResetAfterLoad>no</ResetAfterLoad>
+        <AfterResetFile/>
+        <Dumpcore>no</Dumpcore>
+        <DumpcoreText/>
+        <ConfigICE>
+          <IP>localhost</IP>
+          <PORT>1025</PORT>
+          <CPUNumber>0</CPUNumber>
+          <Clock>1000</Clock>
+          <Delay>10</Delay>
+          <NResetDelay>100</NResetDelay>
+          <WaitReset>50</WaitReset>
+          <DDC>yes</DDC>
+          <TRST>yes</TRST>
+          <PreReset>yes</PreReset>
+          <DebugPrint>no</DebugPrint>
+          <Connect>Normal</Connect>
+          <ResetType>nReset</ResetType>
+          <SoftResetVal>0</SoftResetVal>
+          <RTOSType>Bare Metal</RTOSType>
+          <DownloadToFlash>yes</DownloadToFlash>
+          <ResetAfterConnect>yes</ResetAfterConnect>
+          <GDBName/>
+          <GDBServerType>Local</GDBServerType>
+          <OtherFlags/>
+          <ICEEnablePCSampling>no</ICEEnablePCSampling>
+          <ICESamplingFreq>1000</ICESamplingFreq>
+          <RemoteICEEnablePCSampling>no</RemoteICEEnablePCSampling>
+          <RemoteICESamplingPort>1026</RemoteICESamplingPort>
+          <Version>V5.16.6</Version>
+          <SupportRemoteICEAsyncDebug>no</SupportRemoteICEAsyncDebug>
+        </ConfigICE>
+        <ConfigSIM>
+          <SIMTarget>soccfg/riscv32/smartl_902_cfg_sxw.xml</SIMTarget>
+          <OtherFlags/>
+          <NoGraphic>yes</NoGraphic>
+          <Log>no</Log>
+          <SimTrace>no</SimTrace>
+          <Version>latest</Version>
+        </ConfigSIM>
+        <ConfigOpenOCD>
+          <OpenOCDExecutablePath/>
+          <OpenOCDTelnetPortEnable>no</OpenOCDTelnetPortEnable>
+          <OpenOCDTelnetPort>4444</OpenOCDTelnetPort>
+          <OpenOCDTclPortEnable>no</OpenOCDTclPortEnable>
+          <OpenOCDTclPort>6666</OpenOCDTclPort>
+          <OpenOCDConfigOptions/>
+          <OpenOCDTimeout>5000</OpenOCDTimeout>
+          <PluginID>openocd-sifive</PluginID>
+          <Version>latest</Version>
+        </ConfigOpenOCD>
+      </Debug>
+      <Flash>
+        <InitFile>$(ProjectPath)/../../utilities/flash.init</InitFile>
+        <PreInit/>
+        <Erase>Erase Sectors</Erase>
+        <Algorithms Path="">flash_download.elf</Algorithms>
+        <Program>yes</Program>
+        <Verify>no</Verify>
+        <ResetAndRun>no</ResetAndRun>
+        <ResetType>Soft Reset</ResetType>
+        <SoftResetVal/>
+        <External>no</External>
+        <Command/>
+        <Arguments/>
+      </Flash>
+    </BuildConfig>
+  </BuildConfigs>
+  <DebugSessions>
+    <watchExpressions>duty:1;mclk:1;i2s_duty_l:1;i2s_duty_h:1;matrixTemp:1;textureInfo:1;ConfigData:1;ADCCurrentChannel:1;channeldata:1</watchExpressions>
+    <memoryExpressions>0x40103000;0x4010102c;0x0200c000;0x08040000</memoryExpressions>
+    <statistics>;;32;;MHZ;;up</statistics>
+    <peripheralTabs/>
+    <WatchDisplayFormat>1</WatchDisplayFormat>
+    <LocalDisplayFormat>1</LocalDisplayFormat>
+    <debugLayout/>
+    <memoryTabColSizeExpressions>100:8;100:8;100:8;100:8;</memoryTabColSizeExpressions>
+    <QuickWatchDisplayFormat/>
+  </DebugSessions>
+</Project>
